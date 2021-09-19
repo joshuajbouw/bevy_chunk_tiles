@@ -25,7 +25,7 @@ types = []
 serialize = ["bevy_tilemap_types/serialize", "serde"]
 
 [workspace]
-members = ["library/*", "examples"]
+members = ["library/*"]
 
 [dependencies]
 bevy_app = "0.5"
@@ -46,4 +46,5 @@ hexasphere = "3.2"
 serde = { version = "1.0", features = ["derive"], optional = true }
 
 [dev-dependencies]
-bevy_core = "0.5"
+bevy = "0.5"
+rand = "0.8"
